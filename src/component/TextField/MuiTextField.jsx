@@ -2,28 +2,22 @@ import React, { useState } from "react";
 import { TextField } from "@mui/material";
 
 const MuiTextField = (props) => {
-  const takeDisabledFlag = props.disabled;
+
+  const {size,type,color,label,variant,isDisabled,helperText,className} = props;
 
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {
-    setValue(e.target.value);
+    const value = e.target.value;
+    setValue(value);
   };
 
   return (
-    <TextField
-      value={value}
-      size={props.size}
-      type={props.type}
-      color={props.color}
-      label={props.label}
-      variant={props.variant}
-      onChange={handleChange}
-      disabled={takeDisabledFlag}
-      helperText={props.helperText}
-      className={props.className}
-    />
+    <TextField value={value} size={size} type={type} color={color} label={label} variant={variant} onChange={handleChange} disabled={isDisabled} helperText={helperText} className={className} />
   );
 };
 
 export default MuiTextField;
+
+//  Use This Example
+//  <MuiTextField size={"small"} type={"number"} color={"error"} label={"Contact Number"} variant={"standard"} isDisabled={true} helperText={"Plese Enter a Vlaid Number"}/>

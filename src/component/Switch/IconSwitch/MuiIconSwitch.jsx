@@ -24,3 +24,6 @@ const MuiIconSwitch = (props) => {
 };
 
 export default MuiIconSwitch;
+
+//  Use This Example
+// <MuiIconSwitch label={"Status"} labelDirection={"top"}/>
