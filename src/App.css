@@ -5,13 +5,13 @@
 }
 
 .Mui-component {
-  color: #fff;
+  color: #282c34;
   display: flex;
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
   justify-content: center;
-  background-color: #282c34;
+  background-color: #f5f5f5;
   font-size: calc(10px + 2vmin);
 }

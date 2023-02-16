@@ -1,7 +1,16 @@
 import "./App.css";
+import SendIcon from "@mui/icons-material/Send";
+import MuiButtonIcon from "./component/ButtonIcon/MuiButtonIcon";
 
 function App() {
-  return <div className="Mui-component">{/* Here Add Component */}</div>;
+  const printConsole = () => {
+    console.log("Hello Arun");
+  };
+  return (
+    <div className="Mui-component">
+      <MuiButtonIcon color={"error"} handleClick={printConsole} isDisable={false} btnIcon={<SendIcon />} />
+    </div>
+  );
 }
 
 export default App;
