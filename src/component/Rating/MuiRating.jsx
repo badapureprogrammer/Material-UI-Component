@@ -9,7 +9,6 @@ const MuiRating = (props) => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(newValue)
   };
 
   return (
