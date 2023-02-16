@@ -1,6 +1,7 @@
 import "./App.css";
 import SendIcon from "@mui/icons-material/Send";
-import MuiButtonIcon from "./component/ButtonIcon/MuiButtonIcon";
+import MuiEndButtonIcon from "./component/ButtonIcon/MuiEndButtonIcon";
+import MuiStartButtonIcon from "./component/ButtonIcon/MuiStartButtonIcon";
 
 function App() {
   const printConsole = () => {
@@ -8,7 +9,7 @@ function App() {
   };
   return (
     <div className="Mui-component">
-      <MuiButtonIcon color={"error"} handleClick={printConsole} isDisable={false} btnIcon={<SendIcon />} />
+      <MuiStartButtonIcon color={"success"} variant={"outlined"} startIcon={<SendIcon />} isDisable={false} handleClick={printConsole} > Send </MuiStartButtonIcon>
     </div>
   );
 }
