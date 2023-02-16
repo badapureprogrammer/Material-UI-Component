@@ -1,21 +1,14 @@
 import "./App.css";
-import MuiMultiSelelct from "./component/Select/MuiMultiSelelct";
+import MuiAndroidSwitch from "./component/Switch/AndroidSwitch/MuiAndroidSwitch";
+import MuiIconSwitch from "./component/Switch/IconSwitch/MuiIconSwitch";
 
 function App() {
-  const printConsole = () => {
-    console.log("Hello Arun");
-  };
-
-  const subjectList = [
-    { value: "marathi", name: "Marathi" },
-    { value: "english", name: "English" },
-  ];
   return (
     <div className="Mui-component">
-      <MuiMultiSelelct boxWidth={"300px"} size={"small"} color={"primary"} label={"Select Your Subject"} helperText={"You can choose multiple option"} menuList={subjectList} />
+      <MuiAndroidSwitch label={"Status"} labelDirection={"top"}/>
+      <MuiIconSwitch label={"Status"} labelDirection={"top"}/>
     </div>
   );
 }
 
 export default App;
-
