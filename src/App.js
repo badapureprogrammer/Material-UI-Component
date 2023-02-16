@@ -1,15 +1,32 @@
 import "./App.css";
-import MuiCheckboxIcon from "./component/Checkbox/MuiCheckboxIcon";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
-import BookmarkIcon from "@mui/icons-material/Bookmark";
+import MuiRedioButton from "./component/RadioButton/MuiRedioButton";
 
 function App() {
   const printConsole = () => {
     console.log("Hello Arun");
   };
+
+  const subjectList = [
+    {
+      value: "marathi",
+      name: "Marathi",
+    },
+    {
+      value: "english",
+      name: "English",
+    },
+  ];
   return (
     <div className="Mui-component">
-      <MuiCheckboxIcon size={"small"} color={"error"} isDisable={false} borderIcon={<BookmarkBorderIcon />} checkIcon={<BookmarkIcon />} />
+      <MuiRedioButton
+        isError={false}
+        formLabel={"Subject"}
+        isRow={false}
+        menuList={subjectList}
+        size={"small"}
+        color={"error"}
+        helperText={"Choose your favourite subject"}
+      />
     </div>
   );
 }
