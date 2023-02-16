@@ -2,28 +2,25 @@ import React, { useState } from "react";
 import { Box, FormControlLabel, Checkbox } from "@mui/material";
 
 const MuiCheckbox = (props) => {
+  const { label, size, color, isDisable, className } = props;
+
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = (event) => {
-    setIsChecked(event.target.checked);
-    console.log(isChecked);
+    const value = event.target.checked;
+    setIsChecked(value);
   };
   return (
     <Box>
-      <FormControlLabel
-        label={props.label}
+      <FormControlLabel label={label}
         control={
-          <Checkbox
-            size={props.size}
-            color={props.color}
-            checked={isChecked}
-            disabled={props.isDisable}
-            onChange={handleChange}
-            className={props.className}
-          />
+          <Checkbox size={size} color={color} checked={isChecked} disabled={isDisable} onChange={handleChange} className={className}/>
         }
       />
     </Box>
   );
 };
 export default MuiCheckbox;
+
+//  Use This Example 
+// <MuiCheckbox label={"Status"} size={"small"} color={"error"} isDisable={false}/>

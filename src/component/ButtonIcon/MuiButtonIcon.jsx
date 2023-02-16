@@ -15,6 +15,6 @@ const MuiButtonIcon = (props) => {
 
 export default MuiButtonIcon;
 
-// Example Use This
+//  Use This Example 
 // <MuiButtonIcon color={"error"} handleClick={printConsole} isDisable={false} btnIcon={<SendIcon />} /> 
 

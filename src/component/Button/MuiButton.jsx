@@ -13,5 +13,5 @@ const MuiButton = (props) => {
 
 export default MuiButton;
 
-// Example Use This
+//  Use This Example 
 // <MuiButton size={"small"} color={"secondary"} variant={"contained"} isDisable={false} handleClick={printConsole}> Click Me </MuiButton>
