@@ -2,31 +2,23 @@ import React, { useState } from "react";
 import { Box, TextField, MenuItem } from "@mui/material";
 
 const MuiMultiSelelct = (props) => {
+  const { boxWidth, size, color, label, helperText, menuList } = props;
+
   const [contries, setContries] = useState([]);
 
   const handleChange = (event) => {
     const value = event.target.value;
     setContries(value);
-    console.log(value);
   };
 
   return (
-    <Box width={props.boxWidth}>
-      <TextField
-        select
-        fullWidth
-        value={contries}
-        size={props.size}
-        color={props.color}
-        label={props.label}
-        onChange={handleChange}
-        SelectProps={{
-          multiple: true,
-        }}
-        helperText={props.helperText}
+    <Box width={boxWidth}>
+      <TextField select fullWidth value={contries} size={size} color={color} label={label} onChange={handleChange}
+        SelectProps={{ multiple: true}}
+        helperText={helperText}
       >
-        {props.menuList.map(({ name, value }) => (
-          <MenuItem value={value} key={value}>
+        {menuList.map(({ name, value }, index) => (
+          <MenuItem value={value} key={index}>
             {name}
           </MenuItem>
         ))}
@@ -34,4 +26,12 @@ const MuiMultiSelelct = (props) => {
     </Box>
   );
 };
+
 export default MuiMultiSelelct;
+
+//  Use This Example
+// const subjectList = [
+//   { value: "marathi", name: "Marathi" },
+//   { value: "english", name: "English" },
+// ];
+// <MuiMultiSelelct boxWidth={"300px"} size={"small"} color={"primary"} label={"Select Your Subject"} helperText={"You can choose multiple option"} menuList={subjectList} />
