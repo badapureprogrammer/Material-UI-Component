@@ -1,6 +1,7 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
-import MuiAutoComplete from "./component/AutoComplete/MuiAutoComplete";
+import MuiBox from "./component/Grid/MuiGridLayout";
+
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="Mui-component">
       <MuiTypography color={"error"} variant={"h5"} weight={300}>I want to Become Good Programer</MuiTypography>
-      <MuiAutoComplete boxWidth={"350px"} size={"small"} menuList={skills} isMultiple={false} label={"Subject"}/>
+      <MuiBox/>
     </div>
   );
 }

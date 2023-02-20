@@ -1,0 +1,46 @@
+.demo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  color: #fff;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.box {
+  background-color: brown;
+}
+.box2 {
+  background-color: blue;
+}
+.box3 {
+  background-color: chocolate;
+}
+.box4 {
+  background-color: brown;
+}
+.box5 {
+  background-color: blue;
+}
+.box6 {
+  background-color: chocolate;
+}
+.box7 {
+  background-color: brown;
+}
+.box8 {
+  background-color: blue;
+}
+.box9 {
+  background-color: chocolate;
+}
+.box10 {
+  background-color: brown;
+}
+.box11 {
+  background-color: blue;
+}
+.box12 {
+  background-color: chocolate;
+}
