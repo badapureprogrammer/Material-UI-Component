@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { Stack, Autocomplete, TextField } from "@mui/material";
 
 const MuiAutoComplete = (props) => {
+
   const { boxWidth, size, isMultiple, menuList, label } = props;
 
-  const [value, setValue] = useState([]);
+  const [value, setValue] = useState(null);
 
   const handleChange = (event, newValue) => {
-    const value = event.target.innerText;
-    setValue(value);
+    setValue(newValue);
+    // console.log(newValue)
   };
 
   return (
