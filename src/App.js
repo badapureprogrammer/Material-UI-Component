@@ -1,16 +1,19 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
-import MuiBox from "./component/Grid/MuiGridLayout";
-
+import MuiCard from "./component/Card/MuiCard";
 
 function App() {
 
-  const skills = ["HTML5", "CSS3", "Bootstrap", "Javascript", "SASS"];
+  const printConsole = () => {
+    console.log("Hello Arun")
+  };
 
   return (
     <div className="Mui-component">
-      <MuiTypography color={"error"} variant={"h5"} weight={300}>I want to Become Good Programer</MuiTypography>
-      <MuiBox/>
+      <MuiTypography color={"error"} variant={"h5"} weight={300}>
+        I want to Become Good Programer
+      </MuiTypography>
+      <MuiCard handleClick={printConsole}/>
     </div>
   );
 }
