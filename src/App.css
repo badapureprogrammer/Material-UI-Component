@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 
 .Mui-component {
   color: #282c34;
