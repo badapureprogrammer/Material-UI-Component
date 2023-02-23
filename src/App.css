@@ -3,14 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-::-webkit-scrollbar{
-  display: none;
-}
-
 .Mui-component {
   color: #282c34;
   display: flex;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
