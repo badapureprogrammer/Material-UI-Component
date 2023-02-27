@@ -1,15 +1,14 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
-import MuiDrawer from "./component/Drawer/MuiDrawer";
+import MuiBadge from "./component/Badge/MuiBadge";
 
 function App() {
-
   return (
     <div className="Mui-component">
       <MuiTypography color={"error"} variant={"h5"} weight={300}>
         I want to Become Good Programer
       </MuiTypography>
-      <MuiDrawer drawerDirection={"left"} boxWidth={"300px"} menuAlign={"center"} children={"SIDEBAR"} color={"error"} variant={"body1"}/>
+      <MuiBadge content={1} color={"warning"} />
     </div>
   );
 }
