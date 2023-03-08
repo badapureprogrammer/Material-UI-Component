@@ -1,6 +1,5 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
-import MuiTable from "./component/Table/MuiTable";
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
       <MuiTypography color={"error"} variant={"h5"} weight={300}>
         I want to Become Good Programer
       </MuiTypography>
-      <MuiTable/>
     </div>
   );
 }
