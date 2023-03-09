@@ -1,6 +1,7 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
 
+
 function App() {
   return (
     <div className="Mui-component">
