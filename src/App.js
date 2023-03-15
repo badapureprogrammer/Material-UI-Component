@@ -1,15 +1,13 @@
 import "./App.css";
 import MuiTypography from "./component/Typography/MuiTypography";
-import MuiSkeleton from "./component/Skeleton/MuiSkeleton";
-
 
 function App() {
+
   return (
     <div className="Mui-component">
       <MuiTypography color={"error"} variant={"h5"} weight={300}>
         I want to Become Good Programer
       </MuiTypography>
-      <MuiSkeleton/>
     </div>
   );
 }
